@@ -561,12 +561,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/adobe-hackathon/persona-intelligence/issues)
-- **Documentation**: [Wiki](https://github.com/adobe-hackathon/persona-intelligence/wiki)
-- **Email**: hackathon@adobe.com
+- **Email**: anunayminj@gmail.com
 
 ---
 
 **"Connect What Matters — For the User Who Matters"** ✨
 
-*Built with ❤️ by the Adobe Hackathon Team* 
+*Built with ❤️ by the gitman Team* 
