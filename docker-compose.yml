@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  persona-intelligence:
+    build: .
+    container_name: persona-intelligence
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8000:8000"
+    command: ["python", "main.py", "--help"]
+    restart: unless-stopped
+    
+  # Optional: Add a web interface service in the future
+  # web-interface:
+  #   build: ./web
+  #   container_name: persona-intelligence-web
+  #   ports:
+  #     - "8080:80"
+  #   depends_on:
+  #     - persona-intelligence
+  #   environment:
+  #     - API_URL=http://persona-intelligence:8000
+  #   restart: unless-stopped
+
+networks:
+  default:
+    name: persona-intelligence-network 
